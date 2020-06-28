@@ -4,9 +4,9 @@ FROM centos:7.7.1908
 
 LABEL wenzi 692383247@qq.com
 
-ADD jdk-8u251-linux-x64.tar.gz /usr/local/
+ADD /root/deploy/jdk-8u251-linux-x64.tar.gz /usr/local/
 
-ADD apache-tomcat-8.5.56.tar.gz /usr/local/
+ADD /root/deploy/apache-tomcat-8.5.56.tar.gz /usr/local/
 
 RUN yum install -y epel-release && yum install -y vim wget tree lrzsz gcc gcc-c++ automake pcre pcre-devel zlib zlib-devel openssl openssl-devel iproute net-tools iotop unzip
 
